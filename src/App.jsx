@@ -89,12 +89,68 @@ export default function App() {
             className="brand-logo"
           />
 
-          <div>
-            <p className="brand-name">BrownHill</p>
-            <p className="brand-subtitle">Marketing & Media</p>
-          </div>
-        </a>
+                </section>
 
+      <section className="ai-section">
+        <motion.div
+          className="ai-orb"
+          animate={{
+            scale: [1, 1.08, 1],
+            rotate: [0, 4, -4, 0],
+          }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <span>AI</span>
+        </motion.div>
+
+        <div className="ai-copy">
+          <p className="section-label gold">AI Creative Intelligence</p>
+          <h2>Creative strategy powered by insight, data, and smarter execution.</h2>
+          <p>
+            BrownHill uses research-driven thinking, digital intelligence, and modern
+            creative systems to help organizations understand their audience, sharpen
+            their message, and build campaigns with more precision.
+          </p>
+        </div>
+
+        <motion.div
+          className="ai-signal signal-one"
+          animate={{ y: [0, -18, 0], opacity: [0.65, 1, 0.65] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        >
+          SEO Signals
+        </motion.div>
+
+        <motion.div
+          className="ai-signal signal-two"
+          animate={{ x: [0, 20, 0], opacity: [0.65, 1, 0.65] }}
+          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+        >
+          Audience Insight
+        </motion.div>
+
+        <motion.div
+          className="ai-signal signal-three"
+          animate={{ y: [0, 18, 0], opacity: [0.65, 1, 0.65] }}
+          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
+        >
+          Campaign Ideas
+        </motion.div>
+
+        <motion.div
+          className="ai-signal signal-four"
+          animate={{ x: [0, -20, 0], opacity: [0.65, 1, 0.65] }}
+          transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
+        >
+          Growth Data
+        </motion.div>
+      </section>
+
+      <section id="work" className="section work-section">
         <nav className="nav-links">
           <a href="#work">What We Build</a>
           <a href="#capabilities">Capabilities</a>
